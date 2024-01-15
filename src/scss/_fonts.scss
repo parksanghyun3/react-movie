@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+@mixin font-face($name, $weight) {
+  @font-face {
+    font-family: "SpoqaHanSansNeo"; 
+    src: url(../font/#{$name}.eot);
+    src: url(../font/#{$name}.eot?#iefix) format("embedded-opentype"), url(../font/#{$name}.woff2) format("woff2"), url(../font/#{$name}.woff) format("woff"), url(../font/#{$name}.otf) format("opentype");
+    font-weight: $weight;
+    font-style: normal;
+  }
+}
+@include font-face("SpoqaHanSansNeo-Bold", 700);
+@include font-face("SpoqaHanSansNeo-Medium", 500);
+@include font-face("SpoqaHanSansNeo-Regular", 400);
+@include font-face("SpoqaHanSansNeo-Light", 300);
